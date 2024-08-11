@@ -36,3 +36,20 @@ const calTip = (contas, porcentagem) => {
 const result = calTip(bills, percentual);
 console.log(result);
 //result está retornando 'undefined' pq não estou usando return para o valor produzido pela função voltar para a mesma. E também pq o return mata a repetição do loop.
+
+const calAvarege = (dados) => {
+     let soma = 0;
+
+    for (let i = 0; i < dados.length; i++) {
+     //soma = soma + dados[i]
+     soma += dados[i]
+     console.log(soma)
+
+    }
+    return soma / dados.length;
+}
+
+const resultadoMediaTotals = calAvarege(totals)
+console.log(resultadoMediaTotals);
+const resultadoMediaTips = calAvarege(tips)
+console.log(resultadoMediaTips);
